@@ -53,6 +53,44 @@ int main (){
         }
 
     }
+    printf("\n### Movimento Cavalo ###\n");
+    printf("1 - Direita \n");
+    printf("2 - Esquerda \n");
+    printf("Pra que lado deseja mover o cavalo?: ");
+    int lado_cavalo;
+    scanf("%d", &lado_cavalo);
+    printf("\n");
+    
+    int movimento_cavalo = 1;
+
+    switch (lado_cavalo){
+        case 1:
+
+            while (movimento_cavalo--){
+
+                for(int i = 0; i < 2; i++){
+                    printf("Cima \n");
+                }
+                printf("Direita\n");
+                break;
+            }
+            break;
+        case 2:
+            while (movimento_cavalo--){
+
+                for(int i = 0; i < 2; i++){
+                    printf("Cima \n");
+                }
+                printf("Esquerda\n");
+                break;
+            }
+            break;
+
+        default:
+            printf("Você não se moveu!");
+    }
+
+    
 
     return 0;
 }
